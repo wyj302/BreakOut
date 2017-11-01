@@ -25,6 +25,6 @@ private:
 	static Shader loadShaderFromFile(const GLchar* vShaderFile,
 		const GLchar* fShaderFile,
 		const GLchar* gShaderFile = nullptr);
-	static Texture2D LoadTextureFromFile(const GLchar* file, GLboolean alpha);
+	static Texture2D loadTextureFromFile(const GLchar* file, GLboolean alpha);
 };
 #endif

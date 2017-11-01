@@ -1,7 +1,7 @@
 #ifndef _TEXTURE2D_H_
 #define _TEXTURE2D_H_
 #include <GL/glew.h>
-
+#include <memory>
 class Texture2D
 {
 public:
@@ -20,5 +20,7 @@ public:
 
 	void Bind() const;
 };
+
+typedef std::shared_ptr<Texture2D>  TexturePtr;
 
 #endif
